@@ -5,15 +5,17 @@
 
 # Project Title
 
-Simple overview of use/purpose.
-
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This project will be using the packages NumPy and Matplotlib in order to create 5 graphs that output as PNG files.
 
 ## Getting Started
 
 ### Dependencies
+
+```
+pip install -r requirements.txt
+```
 
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
 * ex. Windows 10
@@ -31,3 +33,7 @@ An in-depth paragraph about your project and overview of use.
 ```
 code blocks for commands
 ```
+
+## Author
+
+Daniel Terreros
