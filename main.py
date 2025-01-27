@@ -12,3 +12,22 @@ determined by my course instructor and outlined in institutional policies. By si
 acknowledge my commitment to upholding the principles of academic integrity.
 
 """
+import pprint
+import yfinance as yf
+
+mytickers = ["RKLB", "INTC", "TSLA", "GME", "LCID" ]
+mydata = {}
+
+for ticker in mytickers:
+    result = yf.Ticker(ticker)
+    mydata[ticker] = {'dayHigh': result.info['dayHigh']}
+    # print(f"{ticker} \tDaily High: : {result.info['dayHigh']}")
+
+pprint.pprint(mydata)
+dat = yf.Ticker("MSFT")
+
+
+#pprint.pprint(dat.info)
+
+# hist = dat.history(period="10d")
+# pprint.pprint(hist)
