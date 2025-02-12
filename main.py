@@ -17,7 +17,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 os.makedirs("charts", exist_ok=True)
-my_tickers = ["RKLB", "INTC", "TSLA", "GME", "LCID"]
+my_tickers = ["RKLB", "INTC", "TSLA", "RDDT", "LCID"]
 
 
 
