@@ -2,8 +2,7 @@
 ### Daniel Terreros
 ### Mini Project 1
 
-
-# Project Title
+# Mini Project 1
 
 ## Description
 
@@ -17,22 +16,15 @@ This project will be using the packages NumPy and Matplotlib in order to create 
 pip install -r requirements.txt
 ```
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-* List pip install instructions.
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
 ```
-code blocks for commands
+python main.py
 ```
+
+### Output
+
+This will create 5 graphs in charts/ for each of the five stocks
 
 ## Author
 
