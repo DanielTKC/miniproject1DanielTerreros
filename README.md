@@ -31,6 +31,6 @@ This will create 5 graphs in charts/ for each of the five stocks
 Daniel Terreros
 
 ## Acknowledgements
-[yfinance](https://pypi.org/project/yfinance/)
-[matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
-[Jason Zeller's youtube video](https://www.youtube.com/watch?v=fFss4RzSkOU)
+* [yfinance](https://pypi.org/project/yfinance/)
+* [matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
+* [Jason Zeller's youtube video](https://www.youtube.com/watch?v=fFss4RzSkOU)
