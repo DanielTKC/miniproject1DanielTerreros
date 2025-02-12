@@ -17,27 +17,27 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 os.makedirs("charts", exist_ok=True)
-mytickers = ["RKLB", "INTC", "TSLA", "GME", "LCID"]
+my_tickers = ["RKLB", "INTC", "TSLA", "GME", "LCID"]
 
 
 
 
-mytickers.sort()
-for ticker in mytickers:
+my_tickers.sort()
+for ticker in my_tickers:
     result = yf.Ticker(ticker)
     hist = result.history(period="10d")
     last_ten_days = []
     for date in hist["Close"][:11]:
         last_ten_days.append(date)
     if len(last_ten_days) == 10:
-        myarray = np.array(last_ten_days)
-        max_price = myarray.max() + (myarray.max()*.05)
-        min_price = myarray.min() - (myarray.min()*.05)
+        my_array = np.array(last_ten_days)
+        max_price = my_array.max() + (my_array.max()*.05)
+        min_price = my_array.min() - (my_array.min()*.05)
         plt.xlabel('Days Ago')
         plt.ylabel('Closing Price')
         plt.axis((9, 0, min_price, max_price ))
         plt.title(f"{ticker} Last 10 Closing Prices")
-        plt.plot(myarray)
+        plt.plot(my_array)
         plt.savefig(f"charts/{ticker}.png")
     else:
         print(f"Do not have 10 days of data. Only have {len(last_ten_days)} days")
