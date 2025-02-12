@@ -12,7 +12,6 @@ determined by my course instructor and outlined in institutional policies. By si
 acknowledge my commitment to upholding the principles of academic integrity.
 
 """
-import pprint
 import yfinance as yf
 import numpy as np
 import matplotlib.pyplot as plt
