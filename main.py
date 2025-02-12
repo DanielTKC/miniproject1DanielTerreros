@@ -16,13 +16,14 @@ import yfinance as yf
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+
+# Create charts directory if it doesn't exist
 os.makedirs("charts", exist_ok=True)
+
+# Sort tickets alphabetically
 my_tickers = ["RKLB", "INTC", "TSLA", "RDDT", "LCID"]
-
-
-
-
 my_tickers.sort()
+#
 for ticker in my_tickers:
     result = yf.Ticker(ticker)
     hist = result.history(period="10d")
@@ -35,9 +36,19 @@ for ticker in my_tickers:
         min_price = my_array.min() - (my_array.min()*.05)
         plt.xlabel('Days Ago')
         plt.ylabel('Closing Price')
+        plt.grid(True, linestyle='--', alpha=0.7)
         plt.axis((9, 0, min_price, max_price ))
         plt.title(f"{ticker} Last 10 Closing Prices")
-        plt.plot(my_array)
+
+        plt.plot(my_array, marker='o', color='r')
         plt.savefig(f"charts/{ticker}.png")
     else:
         print(f"Do not have 10 days of data. Only have {len(last_ten_days)} days")
+
+
+
+
+
+
+
+

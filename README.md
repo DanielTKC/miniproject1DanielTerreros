@@ -33,4 +33,5 @@ Daniel Terreros
 ## Acknowledgements
 * [yfinance](https://pypi.org/project/yfinance/)
 * [matplotlib](https://matplotlib.org/stable/tutorials/pyplot.html)
+* [matplotlib_gridlines](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.grid.html)
 * [Jason Zeller's youtube video](https://www.youtube.com/watch?v=fFss4RzSkOU)
